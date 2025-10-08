@@ -13,7 +13,7 @@ class Config(object):
 # production,, with database uri
 
 class ProdConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URI")
+    SQLALCHEMY_DATABASE_URI = os.getenv("SQLALCHEMY_DATABASE_URI")
 
 class DevConfig(Config):
     SQLALCHEMY_DATABASE_URI = "mysql://root:Shalom!@localhost:3306/sakila"
