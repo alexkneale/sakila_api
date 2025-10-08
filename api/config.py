@@ -16,7 +16,7 @@ class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URI")
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = "mysql://root:Ultrasmilan1899!@localhost:3306/sakila"
+    SQLALCHEMY_DATABASE_URI = "mysql://root:Shalom!@localhost:3306/sakila"
     CORS_ORIGINS = ["http://localhost:5173"]
 
 
