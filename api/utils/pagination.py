@@ -97,4 +97,5 @@ def paginate_query(query, schema, endpoint, **kwargs):
             '_links': links
         }, 200
     except Exception as e:
+        print(e)
         return {'error': 'Pagination error occurred'}, 500
